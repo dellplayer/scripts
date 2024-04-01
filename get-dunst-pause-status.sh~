@@ -1,0 +1,9 @@
+#!/bin/bash
+status=$(dunstctl is-paused)
+#echo $status
+if [ $status == "true" ] ; then
+    echo 'OFF'
+else
+    echo 'ON'
+fi
+
