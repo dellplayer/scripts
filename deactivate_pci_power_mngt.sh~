@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#graphic card
+echo 'on' > /sys/bus/pci/devices/0000:03:00.0/power/control
+
+#ethernet card
+echo 'on' > /sys/bus/pci/devices/0000:0c:00.0/power/control
+
+exit 0
